@@ -1,28 +1,12 @@
 name: Instrument
 
 on:
-  workflow_call:
-    inputs:
-      working_directory:
-        description: 'The working directory for the workflow'
-        required: true
-        type: string
-      FusionLiteProject:
-        description: 'The project name for FusionLite'
-        required: true
-        type: string
-      ApplicationFile:
-        description: 'The application file to be used'
-        required: true
-        type: string
-      InstrumentedFile:
-        description: 'The instrumented file to be used'
-        required: true
-        type: string
+  workflow_dispatch:
+
 
 jobs:
   instrument:
-    runs-on: iAppSecure-Priyakant
+    runs-on: self-hosted
 
     defaults:
       run:

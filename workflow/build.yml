@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # This can be adjusted based on your system, e.g., `windows-latest` for Windows runners.
+    runs-on: self-hosted  # This tells GitHub Actions to run on a self-hosted runner.
 
     steps:
     - name: Checkout repository
